@@ -13,4 +13,4 @@ COPY app/Jobs/ ./app/Jobs/
 RUN npm install -g nodemon && npm install
 
 # Comando padrão ao iniciar o container
-ENTRYPOINT ["nodemon", "./worker"]
+ENTRYPOINT ["nodemon", "./worker", "do-task-queue", "3"]
